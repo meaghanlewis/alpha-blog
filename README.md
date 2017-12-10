@@ -1,3 +1,3 @@
 # README
 
-Alpha blog app
+Alpha blog app used for testing
