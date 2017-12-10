@@ -3,4 +3,7 @@ class Article < ActiveRecord::Base
   validates :title, presence: true, length: { minimum:3, maxmimum:50 }
   validates :description, presence: true, length: { minimum:5, maxmimum:300 }
   validates :user_id, presence: true
+  self.per_page = 10
 end
+
+WillPaginate.per_page = 10

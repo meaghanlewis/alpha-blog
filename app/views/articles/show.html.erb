@@ -1,5 +1,6 @@
 <h2 align="center">Title: <%= @article.title %></h2>
 
+@articles = Article.paginate(:page => params[:page])
 <div class="well col-xs-8 col-xs-offset-2">
   <% if @article.user %>
     <ul class="listing">
@@ -14,7 +15,7 @@
         </div>
       </div>
     </ul>
-  <% end %>  
+  <% end %>
   <h4 class="center description"><strong>Desctiption: </strong></h4>
   <hr>
   <%= simple_format(@article.description) %>
