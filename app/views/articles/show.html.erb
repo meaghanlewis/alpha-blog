@@ -1,6 +1,4 @@
 <h2 align="center">Title: <%= @article.title %></h2>
-
-@articles = Article.paginate(:page => params[:page])
 <div class="well col-xs-8 col-xs-offset-2">
   <% if @article.user %>
     <ul class="listing">
